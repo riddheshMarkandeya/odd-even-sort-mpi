@@ -1,0 +1,91 @@
+Script started on Sun 11 Dec 2022 06:04:33 PM EST
+[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[1;30m([0;36mSun Dec-12[1;32m 6:04:34pm[1;30m)-([0;35mCPU 12.3%[1;30m:[0;35m0[1;30m:[0;35mNet 561[1;30m)-([0;31mhm9650@warrior[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m srun -q debug -t 10:0 --pty bash
+[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[?1034h[1;30m([0;36mSun Dec-12[1;32m 6:04:53pm[1;30m)-([0;35mCPU 43.4%[1;30m:[0;35m0[1;30m:[0;35mNet 195[1;30m)-([0;31mhm9650@asx20[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m make -f Mak
+Makefile.mod  Makefile.org  
+[1;30m([0;36mSun Dec-12[1;32m 6:04:53pm[1;30m)-([0;35mCPU 43.4%[1;30m:[0;35m0[1;30m:[0;35mNet 195[1;30m)-([0;31mhm9650@asx20[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m make -f Makefile.org 
+/opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/bin/mpicc -o original_odd_even_sort_mpi original_odd_even_sort_mpi.c -lm
+[1;30m([0;36mSun Dec-12[1;32m 6:05:05pm[1;30m)-([0;35mCPU 43.4%[1;30m:[0;35m0[1;30m:[0;35mNet 196[1;30m)-([0;31mhm9650@asx20[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m make -f Mak
+Makefile.mod  Makefile.org  
+[1;30m([0;36mSun Dec-12[1;32m 6:05:05pm[1;30m)-([0;35mCPU 43.4%[1;30m:[0;35m0[1;30m:[0;35mNet 196[1;30m)-([0;31mhm9650@asx20[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m make -f Makefile.mod 
+/opt/ohpc/pub/mpi/openmpi3-gnu7/3.1.0/bin/mpicc -o modified_odd_even_sort_mpi modified_odd_even_sort_mpi.c -lm
+[1;30m([0;36mSun Dec-12[1;32m 6:05:13pm[1;30m)-([0;35mCPU 43.4%[1;30m:[0;35m0[1;30m:[0;35mNet 212[1;30m)-([0;31mhm9650@asx20[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m mak
+make              makeconv          makedeltarpm      makedumpfile      makeindex         makemap           makembindex       
+makeblastdb       makedb            makedepend        makeg             makeinfo          makemap.sendmail  makeprofiledb     
+[1;30m([0;36mSun Dec-12[1;32m 6:05:13pm[1;30m)-([0;35mCPU 43.4%[1;30m:[0;35m0[1;30m:[0;35mNet 212[1;30m)-([0;31mhm9650@asx20[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m make[K[K[K[Kgcc [K[K[K[Kgcc quicksort.c -o quicksort -lm
+[1;30m([0;36mSun Dec-12[1;32m 6:06:03pm[1;30m)-([0;35mCPU 43.4%[1;30m:[0;35m0[1;30m:[0;35mNet 207[1;30m)-([0;31mhm9650@asx20[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m exit
+exit
+[1;30m([0;36mSun Dec-12[1;32m 6:06:05pm[1;30m)-([0;35mCPU 12.3%[1;30m:[0;35m0[1;30m:[0;35mNet 561[1;30m)-([0;31mhm9650@warrior[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m sbatch job-script-quicksort.sh
+Submitted batch job 7803490
+[1;30m([0;36mSun Dec-12[1;32m 6:06:19pm[1;30m)-([0;35mCPU 12.3%[1;30m:[0;35m0[1;30m:[0;35mNet 563[1;30m)-([0;31mhm9650@warrior[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m896K[1;30m:[0;32m13[1;30m)
+[0;32m>[0m sbatch job-script-original-sort.sh
+Submitted batch job 7803512
+[1;30m([0;36mSun Dec-12[1;32m 6:06:30pm[1;30m)-([0;35mCPU 12.3%[1;30m:[0;35m0[1;30m:[0;35mNet 563[1;30m)-([0;31mhm9650@warrior[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m1.1M[1;30m:[0;32m16[1;30m)
+[0;32m>[0m sbatch job-script-modified-sort.sh
+Submitted batch job 7803534
+[1;30m([0;36mSun Dec-12[1;32m 6:06:40pm[1;30m)-([0;35mCPU 12.3%[1;30m:[0;35m0[1;30m:[0;35mNet 563[1;30m)-([0;31mhm9650@warrior[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m1.2M[1;30m:[0;32m19[1;30m)
+[0;32m>[0m ll
+total 1.3M
+64K drwxr-xr-x 2 hm9650 wsu 8.0K Dec 11 18:06 [0m[00;36m.[0m/
+64K drwxr-xr-x 5 hm9650 wsu 4.0K Dec 10 04:50 [00;36m..[0m/
+48K -rwxr-xr-x 1 hm9650 wsu 8.3K Dec 10 06:13 [01;32ma.out[0m*
+48K -rw-r--r-- 1 hm9650 wsu    0 Dec 11 18:06 [00merrors_7803490.err[0m
+48K -rw-r--r-- 1 hm9650 wsu    0 Dec 11 18:06 [00merrors_7803512.err[0m
+48K -rw-r--r-- 1 hm9650 wsu    0 Dec 11 18:06 [00merrors_7803534.err[0m
+48K -rw-r--r-- 1 hm9650 wsu  312 Dec 11 18:04 [00mjob-script-modified-sort.sh[0m
+48K -rw-r--r-- 1 hm9650 wsu  312 Dec 11 18:04 [00mjob-script-original-sort.sh[0m
+48K -rw-r--r-- 1 hm9650 wsu  239 Dec 11 18:04 [00mjob-script-quicksort.sh[0m
+48K -rw-r--r-- 1 hm9650 wsu  292 Dec 10 07:25 [00mMakefile.mod[0m
+48K -rw-r--r-- 1 hm9650 wsu  292 Dec 11 02:05 [00mMakefile.org[0m
+96K -rwxr-xr-x 1 hm9650 wsu  14K Dec 11 18:05 [01;32mmodified_odd_even_sort_mpi[0m*
+48K -rw-r--r-- 1 hm9650 wsu 6.4K Dec 11 15:19 [00mmodified_odd_even_sort_mpi.c[0m
+96K -rwxr-xr-x 1 hm9650 wsu  14K Dec 11 18:05 [01;32moriginal_odd_even_sort_mpi[0m*
+48K -rw-r--r-- 1 hm9650 wsu 5.4K Dec 11 15:20 [00moriginal_odd_even_sort_mpi.c[0m
+48K -rw-r--r-- 1 hm9650 wsu   30 Dec 11 18:06 [00moutput_7803490.out[0m
+48K -rw-r--r-- 1 hm9650 wsu   30 Dec 11 18:06 [00moutput_7803512.out[0m
+48K -rw-r--r-- 1 hm9650 wsu    0 Dec 11 18:06 [00moutput_7803534.out[0m
+48K -rw-r--r-- 1 hm9650 wsu    0 Dec 11 18:04 [00moutput.txt[0m
+96K -rwxr-xr-x 1 hm9650 wsu  13K Dec 11 18:06 [01;32mquicksort[0m*
+48K -rw-r--r-- 1 hm9650 wsu 2.1K Dec 11 15:19 [00mquicksort.c[0m
+48K -rw-r--r-- 1 hm9650 wsu  401 Dec 11 18:06 [00mresult_original_sort.txt[0m
+48K -rw-r--r-- 1 hm9650 wsu  397 Dec 11 18:06 [00mresult_quicksort.txt[0m
+[1;30m([0;36mSun Dec-12[1;32m 6:06:42pm[1;30m)-([0;35mCPU 12.3%[1;30m:[0;35m0[1;30m:[0;35mNet 563[1;30m)-([0;31mhm9650@warrior[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m1.3M[1;30m:[0;32m21[1;30m)
+[0;32m>[0m ll
+total 1.3M
+64K drwxr-xr-x 2 hm9650 wsu 8.0K Dec 11 18:06 [0m[00;36m.[0m/
+64K drwxr-xr-x 5 hm9650 wsu 4.0K Dec 10 04:50 [00;36m..[0m/
+48K -rwxr-xr-x 1 hm9650 wsu 8.3K Dec 10 06:13 [01;32ma.out[0m*
+48K -rw-r--r-- 1 hm9650 wsu    0 Dec 11 18:06 [00merrors_7803490.err[0m
+48K -rw-r--r-- 1 hm9650 wsu    0 Dec 11 18:06 [00merrors_7803512.err[0m
+48K -rw-r--r-- 1 hm9650 wsu    0 Dec 11 18:06 [00merrors_7803534.err[0m
+48K -rw-r--r-- 1 hm9650 wsu  312 Dec 11 18:04 [00mjob-script-modified-sort.sh[0m
+48K -rw-r--r-- 1 hm9650 wsu  312 Dec 11 18:04 [00mjob-script-original-sort.sh[0m
+48K -rw-r--r-- 1 hm9650 wsu  239 Dec 11 18:04 [00mjob-script-quicksort.sh[0m
+48K -rw-r--r-- 1 hm9650 wsu  292 Dec 10 07:25 [00mMakefile.mod[0m
+48K -rw-r--r-- 1 hm9650 wsu  292 Dec 11 02:05 [00mMakefile.org[0m
+96K -rwxr-xr-x 1 hm9650 wsu  14K Dec 11 18:05 [01;32mmodified_odd_even_sort_mpi[0m*
+48K -rw-r--r-- 1 hm9650 wsu 6.4K Dec 11 15:19 [00mmodified_odd_even_sort_mpi.c[0m
+96K -rwxr-xr-x 1 hm9650 wsu  14K Dec 11 18:05 [01;32moriginal_odd_even_sort_mpi[0m*
+48K -rw-r--r-- 1 hm9650 wsu 5.4K Dec 11 15:20 [00moriginal_odd_even_sort_mpi.c[0m
+48K -rw-r--r-- 1 hm9650 wsu   30 Dec 11 18:06 [00moutput_7803490.out[0m
+48K -rw-r--r-- 1 hm9650 wsu   30 Dec 11 18:06 [00moutput_7803512.out[0m
+48K -rw-r--r-- 1 hm9650 wsu   30 Dec 11 18:06 [00moutput_7803534.out[0m
+48K -rw-r--r-- 1 hm9650 wsu    0 Dec 11 18:04 [00moutput.txt[0m
+96K -rwxr-xr-x 1 hm9650 wsu  13K Dec 11 18:06 [01;32mquicksort[0m*
+48K -rw-r--r-- 1 hm9650 wsu 2.1K Dec 11 15:19 [00mquicksort.c[0m
+48K -rw-r--r-- 1 hm9650 wsu  415 Dec 11 18:06 [00mresult_modified_sort.txt[0m
+48K -rw-r--r-- 1 hm9650 wsu  401 Dec 11 18:06 [00mresult_original_sort.txt[0m
+48K -rw-r--r-- 1 hm9650 wsu  397 Dec 11 18:06 [00mresult_quicksort.txt[0m
+[1;30m([0;36mSun Dec-12[1;32m 6:06:48pm[1;30m)-([0;35mCPU 12.3%[1;30m:[0;35m0[1;30m:[0;35mNet 563[1;30m)-([0;31mhm9650@warrior[1;30m:[0;33m~/parallel_programming/project[1;30m)-([0;32m1.3M[1;30m:[0;32m22[1;30m)
+[0;32m>[0m exit
+exit
+
+Script done on Sun 11 Dec 2022 06:08:04 PM EST
